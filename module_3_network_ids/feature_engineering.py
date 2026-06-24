@@ -3,8 +3,7 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder
 
 def preprocess_data(df):
-
-```
+    
 # Clean column names
 df.columns = df.columns.str.strip()
 
@@ -36,4 +35,4 @@ for i, label in enumerate(encoder.classes_):
     print(f"{i} -> {label}")
 
 return X, y, encoder
-```
+
