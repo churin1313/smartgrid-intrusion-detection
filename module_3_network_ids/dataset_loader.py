@@ -6,8 +6,6 @@ import pandas as pd
 def load_dataset(file_path):
 """
 Load a CICIDS2017 CSV dataset.
-
-```
 Parameters:
     file_path (str): Path to the dataset CSV file.
 
@@ -31,13 +29,10 @@ except FileNotFoundError:
 except Exception as e:
     print(f"Error loading dataset: {e}")
     return None
-```
 
 if **name** == "**main**":
 dataset_path = input("Enter dataset path: ")
 data = load_dataset(dataset_path)
 
-```
 if data is not None:
     print(data.head())
-```
